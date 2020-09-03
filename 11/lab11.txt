@@ -1,0 +1,16 @@
+1) The purpose of send() is to print the given line of inoput to the output stream
+2) Goes to the socket's output stream
+3) The toString() method allows for the id to be printed whenever an object of the ClientHandler class is sent to
+a print function
+4) The client number is not recycled as count is constantly incremented and added to the id variable whenever a new
+client connects to the server. The id is never adjusted or decremented to care for this.
+5) Line 13, the Line 20 - 24
+6) 10 Threads
+7)
+Server: 4 --- 1 Main thread (starts the server that constantly listens for new connections)
+              3 ClientHandler threads (send a welcoming message, then reads input and performs sendAll())
+
+Client: 9 -- 1 Main Thread & The 3 Client's create 2 threads each, one for reading input  and sends it to the
+socket, and the other for receiving output from the socket and writes it to stdout.
+
+Total: 13

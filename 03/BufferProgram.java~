@@ -1,0 +1,23 @@
+import java.io.*;
+
+public class BufferProgram{
+
+    public static void main(String [] args){
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
+
+        try{
+            String readIn = in.readLine();
+            
+            while(readIn != null){
+                sb.append(readIn);
+                sb.reverse();
+                System.out.println(sb);
+            }
+        }
+        
+        catch(IOException e){
+            System.out.println(e);
+        }
+    }
+}

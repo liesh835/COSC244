@@ -1,0 +1,37 @@
+Q1) Declare a class to be a subclass of Thread, with the subclass overriding the run method of class Thread.
+An instance of the subclass can then be allocated and started. For the second way, you can declare a class that
+implements Runnable interface, which then implements the run method. An instance of the class can then be
+allocated, passed as an arg when creating Thread and then started.
+
+Q2) run()
+
+Q3) start()
+
+Q4) Server.java doesn't contain the sending and receiving lines.
+
+Q5)Line 14 creates a thread that takes system.in as input and outputs to system.out
+Line 15 creates a different thread that takes a socket as input ad outputs to system.out
+
+Q6) No as they are created as two separate threads, independent from one another.
+
+Q7)
+import java.net.*
+
+public class Client{
+
+public static void main(string [] args){
+       try{
+       int port = Integer.parseInt(args[0]);
+       socket = new Socket(args[1], port);
+       System.err.println("Connected to " + args[1] + " on port " + port);
+       new ReadWriteThread(System.in, socket.getOutputStream()).start();
+       new ReadWriteThread(socket.getInputStream(), System.out).start();
+       }catch(Exception e){
+       e.printStackTrace();
+       System.err.println("\Usage: java Server ");
+        }
+       }
+      }
+
+Q8) The thread prints the fruits based on priority in terms of time (pausing for x seconds), in Example 2
+there are multiple 'fruits' running at the same priority(time) can cause interruptions thus causing the lines to become jumbled.

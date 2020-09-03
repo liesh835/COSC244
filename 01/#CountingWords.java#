@@ -1,0 +1,22 @@
+import java.util.*;
+/**
+ * Counting word frequencies
+ *@author Shaun Liew
+ */
+
+public class CountingWords{
+
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        String input = "";
+        
+
+        while(sc.hasNextLine()){
+            input = sc.nextLine();
+            input.toLowerCase();
+            String [] words = input.split("//s");
+        }
+
+        
+          
+         

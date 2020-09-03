@@ -1,0 +1,31 @@
+Q1) using synchronized() allows access to the list of clients without possible interruptions
+
+Q2) 15
+
+Q3) 31 - 37
+
+Q4) "ChatServer started"
+
+Q5) "Accepted connection from client_1"
+
+Q6) "Connected to localhost on port 7777"
+    "Welcome! You are client_1."
+
+Q7) "Accepted connection from client_2"
+   
+Q8) "Connected to localhost on port 7777"
+    "Welcome! You are client_2."
+   
+Q9) "client_1: Hello from client 1"
+
+Q10) "client_1: Hello from client 1"
+
+Q11) "Sending 'Hellow from client 1' to : [client_1, client_2, client_3]"
+
+Q12) "client_3 closed connection!"
+
+Q13) "client_1 : hello"
+
+Q14) "Sending 'hello' to : [client_1, client_2]"
+
+Q15) client 4

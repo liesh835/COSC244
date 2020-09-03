@@ -1,0 +1,27 @@
+1) ^
+2) Reads streams of raw input bytes from files
+3) InputStream f = new FileInputStream(File file);
+4) read(), returns next byte of data, -1 if end of file is reached
+5) writes streams of raw bytes of data
+6) OutputStream f = new FileOutputStream(File file);
+7) write(int b)
+8) close()
+9) public class LabArg{
+          public static void main(String [] args){
+          int firstArg;
+          if(args.length > 0){
+          try{
+              firstArg = Integer.parseInt(arg[0]);
+              } catch(NumberFormatException e){
+              System.err.println("Argument" + args[0] " must be an int");
+              System.exit(1);
+              }
+          }
+
+          for(int i = 0; i < firstArg; i++){
+          System.out.println(args[1]);
+          }
+         }
+       }
+
+ 
